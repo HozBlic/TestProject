@@ -1,0 +1,325 @@
+input[name='custom_name[]'] {
+	width: 70px;
+}
+input[name='custom_value[]'] {
+	width: 150px;
+}
+.divform {
+	
+	max-height: 200px;
+	overflow-y: auto;
+}
+h1 {
+	font-size: 30px;
+}
+.childimage2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.paragraph {
+	padding-top: 30px;
+}
+.exsistingvalues {
+	overflow-y: auto;
+	max-height: 110px;
+	width: 282px;
+	margin-top: 30px;
+}
+td, th, table {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+td:first-child {
+	width: 100px;
+}
+td{
+	width: 150px;
+}
+
+
+body {
+	background: url(../../resources/common/Background.png) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	font-family: arial, sans, serif;
+}
+/******************* BLUE *******************/
+.page {
+	margin: 190px auto 0 auto;
+	width: 920px;
+	height: 420px;
+	position: relative;
+}
+
+.bluepart {
+	background: url(../../resources/common/bgblue.png);
+	display: block;
+	height: 422px;
+	color: white;
+}
+/*stack button text SIGN UP on top of button image*/
+.buttonparent {
+	position: relative;
+	top: 25px;
+	left: 0;
+}
+
+.image1 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.image2 {
+	position: absolute;
+	top: 19px;
+	left: 40px;
+	color: white;
+}
+/*stack button text LOGIN on top of button image*/
+.buttonparent2 {
+	position: relative;
+	top: 25px;
+	left: 0;
+}
+
+.image3 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.image4 {
+	position: absolute;
+	top: 22px;
+	left: 50px;
+}
+/*stack line on top of text*/
+.imageparent {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.childimage1 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.childimage2 {
+	position: absolute;
+	top: 53px;
+	left: 0px;
+}
+/*location of text of inactive blue elements*/
+.bluepart .left {
+	padding-top: 75px;
+	width: 275px;
+	float: left;
+	margin-left: 80px;
+}
+
+.bluepart .right {
+	width: 275px;
+	float: right;
+	margin-right: 80px;
+	padding-top: 105px;
+}
+/****************** WHITE ***************************/
+.whitepart {
+	background: url(../../resources/common/bgwhite.png);
+	background: white;
+	width: 462px;
+	height: 462px;
+	position: absolute;
+	top: -20px;
+	right: 20px;
+	-webkit-transition: -webkit-transform 2s;
+	transition: -webkit-transform 2s;
+	-o-transition: transform 2s;
+	transition: transform 2s;
+	
+	
+}
+/***** logo pa labi no teksta******/
+.bannerparent img:nth-child(2) {
+	float: right;
+	position: relative;
+	top: -30px;
+}
+/*****liinija pa vidu header un text******/
+.lineunder {
+	position: relative;
+	top: 15px;
+}
+
+.line {
+	position: relative;
+	top: -10px;
+}
+
+.icon {
+	float: right;
+}
+/********* Placing icons on top of eachother **********/
+.switchicon {
+	position: relative;
+}
+
+.iconactivated {
+	position: absolute;
+	display: none;
+	right: 0;
+}
+/********* Form **********/
+form {
+	padding-top: 40px;
+}
+
+.forget {
+	float: right;
+	padding-top: 20px;
+}
+/********* Change button colour when hovered **********/
+.switch {
+	position: relative;
+}
+
+.hovered {
+	display: none;
+	position: absolute;
+}
+
+.switch:hover .hovered {
+	display: inline;
+}
+
+.image2.hovered {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.text-input {
+	padding: 8px 0 0 0;
+	display: block;
+	border: none;
+	width: 100%;
+	outline: none;
+}
+
+
+/********* red star **********/
+.whitepart form .input-label span {
+	color: #f44368;
+}
+/********* Login/SignUp content specifics **********/
+
+.active-left {
+	margin: 65px 90px 0px 90px;
+}
+
+.active-right {
+	margin: 94px 90px 0 90px;
+}
+
+.login-button-wrapper {
+	position: relative;
+}
+
+#forgot {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	line-height: 50px;
+	font-size: 11px;
+}
+/********* Footer **********/
+.footer {
+	margin-top: 130px;
+	text-align: center;
+}
+/****************************************************/
+/********* Responsive design ************************/
+/****************************************************/
+@media(max-width: 960px) {
+	body {
+		background: #eeeeee;
+	}
+
+	.background-wrapper {
+		height: 440px;
+		width: 100%;
+	}
+	/********* Inactive Content *********/
+	/********* on small screen *********/
+	.page {
+		width: 100%;
+		height: 100%;
+		min-height: 880px;
+		margin-top: 0;
+	}
+
+	.bluepart {
+		width: 100%;
+		height: 100%;
+		min-height: 870px;
+	}
+
+		.bluepart button {
+			width: 100%;
+			max-width: 140px;
+		}
+
+		.bluepart .left {
+			padding-top: 75px;
+			width: 80%;
+			max-width: 275px;
+			float: none;
+			margin: auto;
+		}
+
+		.bluepart .right {
+			width: 80%;
+			max-width: 275px;
+			float: none;
+			margin: auto;
+			padding-top: 220px;
+		}
+	/********* Active Content *********/
+	/********* on small screen *********/
+	.whitepart {
+		width: 100%;
+		height: 440px;
+		top: 420px;
+		left: 0px;
+	}
+	/********* Login/SignUp content specifics **********/
+	.active-left, .active-right {
+		width: 80%;
+		max-width: 275px;
+	}
+
+	.active-left {
+		margin: 65px auto;
+	}
+
+	.active-right {
+		margin: 94px auto;
+	}
+	/********* Footer **********/
+	.footer {
+		margin-top: 0px;
+		padding: 0 0 10px 0;
+	}
+}
+/********* Helper classes **********/
+.hidden {
+	display: none !important;
+}
+
+.invisible {
+	opacity: 0;
+}
